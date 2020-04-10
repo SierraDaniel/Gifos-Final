@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link id="styleSheet" href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">    
+    <title>gifOS</title>
+    <!-- LLAVE GIPHY  cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM  -->
+    <!--  SEGUNDA LLAVE k7Gu0yjErzdGIsumROB3k3JhrLmYy2Jq -->
+</head>
+
+<body>
+
+    <div id="top_bar">
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </div>
+    <div class="logo_and_buttons">
+        <img class="logo" id="logo-img" src="images/gifOF_logo.png" alt="Logos gifOS" />
+        <button type="button" onclick="window.location.href='capture.html'" class="standard_button" id="button_create">
+            <p class="p_button"> Crear gifos</p>
+        </button>
+        <button onclick="drop()" class="dropbtn" type="button" class="standard_button" id="button_choose">
+            <p class="p_button"> Elegir tema</p>
+        </button>
+
+        <div class="dropdown">
+
+            
+            <button onclick="drop()" class="dropbtn">
+                <img src="images/dropdown.svg" alt="dropdown_arrow">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a onclick="modeSelector('styles/styles.css')" id="sailor_day">
+                    <p>Sailor Day </p>
+                </a>
+                <a onclick="modeSelector('styles/dark_mode.css')" id="sailor_night">
+                    <p>Sailor Night</p>
+                </a>
+            </div>
+        </div>
+
+        <button type="button" id="button_my_gifos">
+            <p>Mis Guifos</p>
+        </button>
+    </div>
+
+    <div class="search_bar">
+        <div class="color_bar" class="color_bar">
+            <p> Buscar</p>
+        </div>
+        <div class="input_button_block">
+            <input id="search_input" type="text" class="search_type"
+                placeholder="Busca gifs, hashtags, temas, busca lo que quieras...">
+            <button onclick="gifSearch()" type="button" class="search_button" id="button_search">
+
+                <img class="search_icon" src="images/lupa_inactive.svg" alt="search_icon">
+                <p>Buscar</p>
+        </div>
+    </div>
+
+    <div id="mySuggestion" class="search_hidden">
+        <div id="mySearch" class="search_suggestion">
+            <div id="suggestion1" onclick="search_suggestion1()"> &nbsp &nbsp Gatos </div>
+            <div id="suggestion2" onclick="search_suggestion2()"> &nbsp &nbsp Sailor Moon </div>
+            <div id="suggestion3" onclick="search_suggestion3()"> &nbsp &nbsp Quédate en casa</div>
+        </div>
+    </div>
+
+    <!-- <section id="suggestion_result_container" class="suggestions_container_hidden" > </section> -->
+    <section id="results_container" class="results_hidden" > </section>
+
+    <div class="today_suggestion_bar">
+        <p> Hoy te sugerimos</p>
+    </div>
+
+    <section class="grid_container">
+        <div class="image1">
+            <div class="color_bar_grid">
+                <p> #Jonathanvanness </p> <img class="close_icon" src="images/button3.svg" alt="close_icon">
+            </div>
+            <img class="inner_gif" src="https://media.giphy.com/media/5PhoLTGAiHguInjU8w/source.gif"
+                alt="gif weird guy">
+        </div>
+        <div class="ver_mas">
+            <p>Ver más...</p>
+        </div>
+        <div class="image2">
+            <div class="color_bar_grid">
+                <p>#SailorMercury</p> <img class="close_icon" src="images/button3.svg" alt="close_icon">
+            </div>
+            <img class="inner_gif" src="https://media.giphy.com/media/148v5ID1vNBVyo/source.gif" alt="gif sailor">
+        </div>
+        <div class="ver_mas">
+            <p>Ver más...</p>
+        </div>
+        <div class="image3">
+            <div class="color_bar_grid">
+                <p>#FabFive</p><img class="close_icon" src="images/button3.svg" alt="close_icon">
+            </div>
+            <img class="inner_gif" src="https://media.giphy.com/media/fQxSFJzoS8zKJXg5ek/source.gif" alt="gif sailor">
+        </div>
+        <div class="ver_mas">
+            <p>Ver más...</p>
+        </div>
+        <div class="image4">
+            <div class="color_bar_grid">
+                <p>#Unicorns&Rainbows</p><img class="close_icon" src="images/button3.svg" alt="close_icon">
+            </div>
+            <img class="inner_gif" src="https://media.giphy.com/media/26AHG5KGFxSkUWw1i/source.gif" alt="gif sailor">
+        </div>
+        <div class="ver_mas">
+            <p>Ver más...</p>
+        </div>
+    </section>
+
+    <div class="today_suggestion_bar">
+        <p> &nbsp Tendencias:</p>
+    </div>
+
+    <section class="grid_container2" id="trend_container">
+        <!--   <div class="image1">
+            <div class="trends_grid"> </div>
+        </div>
+        <div class="image2">
+            <div class="trends_grid"> </div>
+        </div>
+        <div class="image3">
+            <div class="trends_grid"> </div>
+        </div>
+        <div class="image4">
+            <div class="trends_grid"> </div>
+        </div> -->
+
+    </section>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
