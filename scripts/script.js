@@ -52,7 +52,7 @@ input.addEventListener("keyup", () => {
 function search_suggestion1() {
   document.getElementById("results_container").classList.replace("results_hidden", "grid_container2");
   for (let i = 0; i < 4; i++) {
-    let found = fetch('http://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "cats")
+    let found = fetch('https://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "cats")
       .then((response) => {
         return response.json();
       })
@@ -83,7 +83,7 @@ function search_suggestion1() {
 function search_suggestion2() {
   document.getElementById("results_container").classList.replace("results_hidden", "grid_container2");
   for (let i = 0; i < 4; i++) {
-    let found = fetch('http://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "sailor moon")
+    let found = fetch('https://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "sailor moon")
       .then((response) => {
         return response.json();
       })
@@ -113,7 +113,7 @@ function search_suggestion2() {
 function search_suggestion3() {
   document.getElementById("results_container").classList.replace("results_hidden", "grid_container2");
   for (let i = 0; i < 4; i++) {
-    let found = fetch('http://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "stay home")
+    let found = fetch('https://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "stay home")
       .then((response) => {
         return response.json();
       })
@@ -173,7 +173,7 @@ document.getElementById("vermas1").addEventListener('click', (ev) => {
 
   document.getElementById("results_container").classList.replace("results_hidden", "grid_container2");
   for (let i = 0; i < 4; i++) {
-    let found = fetch('http://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "Jonathan queer eye")
+    let found = fetch('https://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "Jonathan queer eye")
       .then((response) => {
         return response.json();
       })
@@ -203,7 +203,7 @@ document.getElementById("vermas2").addEventListener('click', (ev) => {
 
   document.getElementById("results_container").classList.replace("results_hidden", "visible_grid");
   for (let i = 0; i < 4; i++) {
-    let found = fetch('http://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "SailorMoon")
+    let found = fetch('https://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "SailorMoon")
       .then((response) => {
         return response.json();
       })
@@ -234,7 +234,7 @@ document.getElementById("vermas3").addEventListener('click', (ev) => {
 
   document.getElementById("results_container").classList.replace("results_hidden", "visible_grid");
   for (let i = 0; i < 4; i++) {
-    let found = fetch('http://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "Queer eye")
+    let found = fetch('https://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "Queer eye")
       .then((response) => {
         return response.json();
       })
@@ -265,7 +265,7 @@ document.getElementById("vermas4").addEventListener('click', (ev) => {
 
   document.getElementById("results_container").classList.replace("results_hidden", "visible_grid");
   for (let i = 0; i < 4; i++) {
-    let found = fetch('http://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "Rainbow unicorn")
+    let found = fetch('https://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + "Rainbow unicorn")
       .then((response) => {
         return response.json();
       })
@@ -308,7 +308,7 @@ function gifSearch() {
   let suggestions = document.getElementById("mySuggestion");
   suggestions.classList.replace("search_container", "search_hidden", );
   for (let i = 0; i < 24; i++) {
-    let found = fetch('http://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + search_input.value)
+    let found = fetch('https://api.giphy.com/v1/gifs/search?api_key=cwvIclC4Z5Ondbs0vcsTLdgXmOOllsEM&q=' + search_input.value)
       .then((response) => {
         return response.json();
       })
